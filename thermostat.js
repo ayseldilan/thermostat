@@ -8,6 +8,7 @@ class Thermostat{
     getTemperature() {
         return this.temperature;
     }
+    //goes up and reaches max temp, else returns back temp
     up() {
         if (this.temperature >= this.maxTemp) {
             return this.temperature;
@@ -17,6 +18,7 @@ class Thermostat{
         }
         
     }
+
     down() {
         if (this.temperature <= this.minTemp) {
             return this.temperature;
@@ -25,7 +27,7 @@ class Thermostat{
         return this.temperature -= 1;
         }
     }
-    
+
     setPowerSavingMode(boolean) {
         this.powerSaving = boolean;
         this.setMaxTemp();
@@ -36,6 +38,10 @@ class Thermostat{
         } else {
           this.maxTemp = 32;
         }
+    }
+
+    reset() {
+        return this.temperature = 20;
     }
 
 }
