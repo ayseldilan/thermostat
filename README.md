@@ -7,7 +7,7 @@ To test the thermostat:
 2. Run the following command from the project directory:
 npm install
 
-##Approach
+# #Approach
 1. I initally wrote a first test file named thermostat.test.js and wrote a simple unit test for the Thermostat class. I initalised a new instance of this class with a property temperature set to 20 using getTemperature method to recall in other locations. 
 2. I then created a method that would allow me to increases the temperature by 2.
 3. Next, I created the opposite method which decreased the temperature by 2.
@@ -16,7 +16,7 @@ npm install
 6. I set limitations as to how low the temperature could go and decided that the tempetarue cannot go below 10 degrees
 7. Finally, the thermostat could reset the temperature to 20.
 
-##User Stories
+# #User Stories
 ````
 As a thermometer,
 So that i can keep you warm,
